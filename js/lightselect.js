@@ -10,5 +10,5 @@ element1.addEventListener('click', ()=>{
 element2.addEventListener('click', ()=>{
     element2.innerHTML = "Changing to light mode..."
     element2.style.color = "black"
-    element2.style.backgroundColor = "#151515"
+    element2.style.backgroundColor = "#FFFFFF"
 })
