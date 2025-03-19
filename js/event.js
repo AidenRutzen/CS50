@@ -19,3 +19,9 @@ element2.addEventListener('mouseout', ()=>{
     element2.style.color = "white"
     element2.style.backgroundColor = "#BB33BB"
 })
+
+console.log("Hi")
+
+document.addEventListener('keyup', (event)=>{
+    console.log(Hello)
+})
