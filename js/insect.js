@@ -72,7 +72,7 @@ function increaseScore() {
     if(score > 19){
         message.classList.add('visible')
     }
-    scoreEl.innerHTML = `Score: ${Score}`
+    scoreEl.innerHTML = `Score: ${score}`
 }
 
 function getRandomLocation() {
