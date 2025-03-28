@@ -17,8 +17,6 @@ body{
     margin: 0 auto;
 }
 
-.hero{
-    background-image: url(images/computer.jpg);
 .hero {
     background-image: url(images/computer.jpg);
     Background-repeat: no-repeat;
