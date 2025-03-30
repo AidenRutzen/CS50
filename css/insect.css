@@ -8,7 +8,7 @@ body{
     color: #ffffff;
     font-family: "Press Start 2P", system-ui;
     height: 100vh;
-   
+
     text-align: center;
 }
 
@@ -140,4 +140,12 @@ h1 {
     width: 100px;
     height: 100px;
 
+}
+
+#home{
+    background-color: white;
+    color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }

@@ -30,6 +30,7 @@ body{
 #header{
     position: absolute;
     background-color: black;
+    cursor: default;
 }
 
 #element1{
@@ -38,6 +39,7 @@ body{
     top: 0px;
     left: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element2{
@@ -46,6 +48,7 @@ body{
     top: 0px;
     right: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element3{
@@ -53,6 +56,7 @@ body{
     position: absolute;
     top: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element4{
@@ -61,6 +65,7 @@ body{
     bottom: 0px;
     left: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element5{
@@ -68,6 +73,7 @@ body{
     position: absolute;
     bottom: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element6{
@@ -76,6 +82,7 @@ body{
     bottom: 0px;
     right: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element7{
@@ -83,6 +90,7 @@ body{
     position: absolute;
     left: 0px;
     color: purple;
+    cursor: pointer;
 }
 
 #element8{
@@ -90,4 +98,5 @@ body{
     position: absolute;
     right: 0px;
     color: purple;
+    cursor: pointer;
 }

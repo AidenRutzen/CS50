@@ -11,3 +11,31 @@ const element8 = document.getElementById('element8')
 element1.addEventListener('click', ()=>{
     window.location.href = "https://aidenrutzen.github.io/CS50/event.html"
 })
+
+element2.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/expanding.html"
+})
+
+element3.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/insect.html"
+})
+
+element4.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/lightselect.html"
+})
+
+element5.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/loading.html"
+})
+
+element6.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/nav.html"
+})
+
+element7.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/search.html"
+})
+
+element8.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/sound.html"
+})
