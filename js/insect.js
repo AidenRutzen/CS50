@@ -5,9 +5,14 @@ const start_btn = document.getElementById('start-btn')
 const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
 const message = document.getElementById('message')
+const element1 = document.getElementById('element1')
 let seconds = 0;
 let score = 0;
 let selected_index = {}
+
+element1.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/index.html"
+})
 
 start_btn.addEventListener('click', () =>{
     screens[0].classList.add('up')

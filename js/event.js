@@ -2,6 +2,7 @@ const element1 = document.getElementById('element1')
 const element2 = document.getElementById('element2')
 const element3 = document.getElementById('element3')
 const element4 = document.getElementById('element4')
+const element6 = document.getElementById('element6')
 
 element1.addEventListener('click', ()=>{
     element1.innerHTML = "I've been clicked! <br> Try double clicking me."
@@ -64,4 +65,8 @@ let index = 0
 element5.addEventListener('click', ()=>{
     element5.style.animationPlayState = list[index]
     index = (index + 1) % 2
+})
+
+element6.addEventListener('click', ()=>{
+    website.location.href = "https://aidenrutzen.github.io/CS50/index.html"
 })

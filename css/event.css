@@ -61,3 +61,9 @@ body{
     animation: spin .3s linear infinite;
     animation-play-state: paused;
 }
+
+#element6{
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+}
