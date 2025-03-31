@@ -64,6 +64,6 @@ body{
 
 #element6{
     position: absolute;
-    top: 0px;
     cursor: pointer;
+    background-color: #BB33BB
 }
