@@ -22,3 +22,10 @@ body {
     top: 0px;
     right: 0px;
 }
+
+#element3{
+    position: absolute;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
