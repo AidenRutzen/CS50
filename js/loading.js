@@ -1,6 +1,6 @@
 loadText = document.querySelector('.loading-text')
 bg = document.querySelector('.bg')
-
+element1 = document.getElementById('element1')
 
 load = 0;
 
@@ -16,3 +16,7 @@ function blurring() {
     loadText.style.opacity = 1 - load/100
     bg.style.filter = `blur(${30-(load/100)*30}px)`
 }
+
+element1.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/index.html"
+})

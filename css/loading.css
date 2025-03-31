@@ -27,3 +27,12 @@ body {
     background-repeat: no-repeat;
     filter: blur(0px);
 }
+
+#element1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
