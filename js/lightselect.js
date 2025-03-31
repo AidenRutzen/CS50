@@ -13,8 +13,8 @@ element1.addEventListener('click', ()=>{
 element2.addEventListener('click', ()=>{
     element2.innerHTML = "Light Mode"
     element2.style.color = "black"
-    element2.style.backgroundColor = "#FFFFFF"
-    document.body.style.backgroundColor = "#FFFFFF"
+    element2.style.backgroundColor = "#ffffff"
+    document.body.style.backgroundColor = "#ffffff"
 })
 
 element3.addEventListener('click', ()=>{

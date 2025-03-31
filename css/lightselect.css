@@ -8,13 +8,16 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+    color: black;
 }
 
 #element1{
     position: absolute;
     top: 0px;
     left: 0px;
+    background-color: #000000;
+    color: white;
 }
 
 #element2{
