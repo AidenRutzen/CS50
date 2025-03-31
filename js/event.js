@@ -6,7 +6,7 @@ const homepage = document.getElementById('homePage')
 
 
 homePage.addEventListener('click', ()=>{
-    website.location.href = "https://aidenrutzen.github.io/CS50/index.html"
+    window.location.href = "https://aidenrutzen.github.io/CS50/index.html"
 })
 
 
