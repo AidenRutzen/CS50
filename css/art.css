@@ -7,7 +7,8 @@ body{
     background-size: cover;
     display: flex;
     margin: 0;
-    
+    justify-content: center;
+    height: 100vh;
 }
 
 #element1{
@@ -15,4 +16,11 @@ body{
     top: 0px;
     left: 0px;
     background-color: #00008B;
+}
+
+#element2{
+    position: absolute;
+    background-color: #FF0000;
+    top: 0px;
+    right: 0px;
 }
