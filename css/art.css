@@ -39,3 +39,10 @@ body{
     right: 0px;
     width: 68.5vw;
 }
+
+#element3{
+    position: absolute;
+    background-color: #000000;
+    right: 0px;
+    top: 40px;
+}
