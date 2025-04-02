@@ -1,8 +1,13 @@
-
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    margin: 0;
+    
 }
 
 #element1{
@@ -10,5 +15,4 @@ body{
     top: 0px;
     left: 0px;
     background-color: #00008B;
-    color: blue;
 }
