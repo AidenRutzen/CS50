@@ -100,3 +100,10 @@ body{
     color: purple;
     cursor: pointer;
 }
+
+#element9{
+    font-size: 25px;
+    position: absolute;
+    color: purple;
+    cursor: pointer;
+}

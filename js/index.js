@@ -6,6 +6,7 @@ const element5 = document.getElementById('element5')
 const element6 = document.getElementById('element6')
 const element7 = document.getElementById('element7')
 const element8 = document.getElementById('element8')
+const element9 = document.getElementById('element8')
 
 
 element1.addEventListener('click', ()=>{
@@ -38,4 +39,8 @@ element7.addEventListener('click', ()=>{
 
 element8.addEventListener('click', ()=>{
     window.location.href = "https://aidenrutzen.github.io/CS50/sound.html"
+})
+
+element9.addEventListener('click', ()=>{
+    window.location.href = "https://aidenrutzen.github.io/CS50/art.html"
 })
