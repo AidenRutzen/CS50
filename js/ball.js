@@ -4,6 +4,7 @@ const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 let LPaddleWidth = 20
 let LPaddleHeight = 100
+let LPaddleSpeed = 5
 const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
@@ -49,4 +50,20 @@ create LPaddle() {
     LPaddle.style.backgroundColor = 'blue'
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = "50px"
+    LPaddle.style.top = `${windowHeight / 2 - LPaddleHeight / 2}px`
 }
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+    }
+    if (event.key == 's') {
+        //move down
+    }
+    if (event.key == 'a') {
+        //move left
+    }
+    if (event.key == 'd') {
+        //move right
+    }
+})
