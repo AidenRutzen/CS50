@@ -20,6 +20,9 @@ let ballXDirection = 1
 let ballYPosition = windowHeight/2 - ballRadius
 let ballYDirection = 1
 
+let score = 0 //display score and increase score by 1
+let level = 1 //display the level and increase the level by 1 everytime score increase by 10
+//As level increases increase ball speed
 
 
 createBall()
@@ -98,5 +101,15 @@ function moveLPaddle() {
     if (wKey == true && LPaddleYPosition > 0) {
         LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
     }
-    if (sKey == )
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight) {
+        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
+    }
+    LPaddle.style.top = `${LPaddleYPosition}px`
 }
+
+function animate() {
+    moveBall()
+    moveLPaddle()
+    requestAnimationFrame(animate)
+}
+animate()
