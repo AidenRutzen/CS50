@@ -2,6 +2,8 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
+let LPaddleWidth = 20
+let LPaddleHeight = 100
 const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
@@ -38,4 +40,13 @@ function moveBall() {
     if(ballXPosition < 0 || ballXPosition > windowWidth - 2* ballRadius){
         ballXDirection = ballXDirection * -1
     }
+}
+
+
+create LPaddle() {
+    LPaddle.style.height = `${LPaddleHeight}px`
+    LPaddle.style.width = `${LPaddleWidth}px`
+    LPaddle.style.backgroundColor = 'blue'
+    LPaddle.style.position = 'absolute'
+    LPaddle.style.left = "50px"
 }
