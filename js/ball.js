@@ -1,11 +1,13 @@
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
+let LPaddleHeight = 100
+
 //paddle variables
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 let LPaddleWidth = 10
-let LPaddleHeight = 100
+
 let LPaddleSpeed = 30
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 LPaddleXPosition = 70
