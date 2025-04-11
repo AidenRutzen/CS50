@@ -58,7 +58,7 @@ document.addEventListener('keyup', (event) => {
         LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
     }
     if (event.key == 's') {
-        //move down
+        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
     }
     if (event.key == 'a') {
         //move left
