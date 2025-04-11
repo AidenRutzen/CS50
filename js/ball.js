@@ -1,8 +1,14 @@
 const ball = document.createElement('div')
+const LPaddle = document.createElement('div')
 const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
+let ballSpeed = 5
+let ballXDirection = 1
+let ballYPosition = windowHeight/2 - ballRadius
+let ballYDirection = 1
+
 
 createBall()
 function createBall(){
@@ -12,13 +18,23 @@ function createBall(){
     ball.style.borderRadius = "50%"
     ball.style.backgroundColor = "green"
     ball.style.position = "absolute"
-    ball.style.top = `${windowHeight/2 - ballRadius}px`
-    ball.style.left = `${windowWidth/2 - ballRadius}px`
+    ball.style.top = `${ballYPosition}px`
+    ball.style.left = `${ballXPosition}px`
 }
 
 setInterval(moveBall, 10)
 
 function moveBall() {
-    ballXPosition = ballXPosition + 5
+    ballXPosition = ballXPosition + ballSpeed * ballXDirection
+    ballYPosition = ballYPosition + ballSpeed * ballYDirection
+    ball.style.top = `${ballYPostion}px`
     ball.style.left = `${ballXPosition}px`
+
+    if(ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
+        ballYDirection = ballYDirection * -1
+    }
+
+    if(ballXPosition < 0 || ballXPosition > windowWidth - 2* ballRadius){
+        ballXDirection = ballXDirection * -1
+    }
 }
