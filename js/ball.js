@@ -22,7 +22,7 @@ let ballYDirection = 1
 
 const game = document.createElement('div')
 document.body.appendChild(game)
-let gameWidth = 50
+let gameWidth = 500
 let gameHeight = 100
 let gameScore = 0
 let gameLevel = 1
@@ -119,22 +119,24 @@ animate()
 
 createScore()
 function createScore() {
-    game.style.score = `${gameScore}px`
-    game.style.level = `${gameLevel}px`
     game.style.backgroundColor = "blue"
     game.style.top = "0px"
-    game.style.right = "0px"
+    game.style.left = "200px"
     game.style.color = "white"
     game.style.position = "absolute"
     game.style.height = `${gameHeight}px`
     game.style.width = `${gameWidth}px`
+    game.style.display = "flex"
 }
 
+increaseScore()
 function increaseScore() {
     if ((ballXPosition == LPaddleXPosition) && (ballYPosition == LPaddleYPosition)) {
-        score = score + 1
+        gameScore = gameScore + 1
     }
-    if (score == 10) {
-        level = level + 1
+    if (gameScore == 10) {
+        gameLevel = gameLevel + 1
     }
+    gameScore.innerHTML = `Score: ${gameScore}`
+    gameLevel.innerHTML = `Level: ${gameLevel}`
 }
