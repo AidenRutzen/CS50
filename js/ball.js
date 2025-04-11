@@ -1,30 +1,31 @@
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
-let LPaddleHeight = 100
-
 //paddle variables
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 let LPaddleWidth = 10
-
-let LPaddleSpeed = 30
+let LPaddleHeight = 100
+let LPaddleSpeed = 20
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
-LPaddleXPosition = 70
+let LPaddleXPosition = 70
 
 //ball variables
 const ball = document.createElement('div')
 document.body.appendChild(ball)
 const ballRadius = 20
 let ballXPosition = windowWidth/2 - ballRadius
-let ballSpeed = 5
+let ballSpeed = 3
 let ballXDirection = 1
 let ballYPosition = windowHeight/2 - ballRadius
 let ballYDirection = 1
 
-let score = 0 //display score and increase score by 1
-let level = 1 //display the level and increase the level by 1 everytime score increase by 10
-//As level increases increase ball speed
+const game = document.createElement('div')
+document.body.appendChild(game)
+let gameWidth = 50
+let gameHeight = 100
+let gameScore = 0
+let gameLevel = 1
 
 
 createBall()
@@ -57,7 +58,7 @@ function moveBall() {
     let ballBottom = ballYPosition + 2 * ballRadius
     let ballLeft = ballXPosition
     let LPaddleTop = LPaddleYPosition
-    let LPaddleBottom = LPaddleYPosition + LPaddleheight
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
     let LPaddleRight = LPaddleXPosition + LPaddleWidth
 
     if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)) {
@@ -115,3 +116,25 @@ function animate() {
     requestAnimationFrame(animate)
 }
 animate()
+
+createScore()
+function createScore() {
+    game.style.score = `${gameScore}px`
+    game.style.level = `${gameLevel}px`
+    game.style.backgroundColor = "blue"
+    game.style.top = "0px"
+    game.style.right = "0px"
+    game.style.color = "white"
+    game.style.position = "absolute"
+    game.style.height = `${gameHeight}px`
+    game.style.width = `${gameWidth}px`
+}
+
+function increaseScore() {
+    if ((ballXPosition == LPaddleXPosition) && (ballYPosition == LPaddleYPosition)) {
+        score = score + 1
+    }
+    if (score == 10) {
+        level = level + 1
+    }
+}
