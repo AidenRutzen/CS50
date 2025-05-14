@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6B7E23;
+    color: #C2B280;
+    font-family: "Press Start 2P", system-ui;
+    height: 100vh;
+    text-align: center;
+}
+
+.box {
+    background-color: #ffffff
+}

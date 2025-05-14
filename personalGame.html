@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="css/personalGame.css">
+    </head>
+    <body>
+        <div class="screen">
+            <h1>Start</h1>
+            <button class="btn" id="start-btn">Deploy</button>
+        </div>
+        <div class="screen">
+            <h1>Choose Your Gamemode</h1>
+            <ul class="gamemode-list">
+                <li>
+                    <button class="choose-gamemode-btn">
+                        <p>Infantry</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="choose-gamemode-btn">
+                        <p>Tanks</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="choose-gamemode-btn">
+                        <p>Air</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="choose-gamemode-btn">
+                        <p>Naval</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="screen game-container" id="game-container">
+            <h3 class="time" id="time">Time: 00:00</h3>
+            <h3 id="score" class="score">Score: 0</h3>
+        </div>
+    </body>
+</html>
