@@ -23,6 +23,6 @@ function setColor(element){
 }
 
 function getRandomColor() {
-    return colors[Math.floor(Math.random() * colors.langth)]
+    return colors[Math.floor(Math.random() * colors.length)]
 }
 
